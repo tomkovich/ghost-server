@@ -12,6 +12,8 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req, pubsub }),
 });
 
+const port = process.env.PORT || 5000;
+
 mongoose
   .connect(
     "mongodb+srv://oxxxymiron:admin12345@cluster0-b6sfv.mongodb.net/oxxxy?retryWrites=true&w=majority",
@@ -19,7 +21,7 @@ mongoose
   )
   .then(() => {
     console.log("MONGODB connected");
-    return server.listen();
+    return server.listen({ port });
   })
   .then((res) => {
     console.log(`Server running at ${res.url}`);
