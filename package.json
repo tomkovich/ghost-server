@@ -1,0 +1,26 @@
+{
+  "name": "graphQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-link-ws": "^1.0.20",
+    "apollo-server": "^2.11.0",
+    "apollo-utilities": "^1.3.4",
+    "graphql": "^14.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2",
+    "subscriptions-transport-ws": "^0.9.16"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
